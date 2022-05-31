@@ -3,6 +3,9 @@ lista_pytan = []
 dziala = 1
 while dziala:
     ile_pytan = int(input("ile chcesz miec pytan? (max20) "))
+    if(ile_pytan > 20):
+        print("czytac nie umiesz? do 20")
+        continue
     print(ile_pytan)
     while len(lista_pytan) != ile_pytan:
         los = random.randint(1, 20)
