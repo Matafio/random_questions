@@ -13,7 +13,7 @@ while dziala:
     pytania = open("pytania.txt", "r").read().split("\n")  #lista pytan
     odpowiedzi = open("odpowiedzi.txt", "r").read().split("\n") #lista odpowiedzi
 
-    for i in range(len(lista_pytan)): # dla każdego z pola, do pierwszego pola wpisujemy pierwsze z danych i tak dalej
+    for i in range(len(lista_pytan)):
         nr_pytania = lista_pytan[i]
         print(f"pytanie nr {lista_pytan[i]}: \n" + pytania[nr_pytania-1]) 
         odpowiedz = input("Twoja dpowiedz: ")
